@@ -2,8 +2,7 @@ module.exports = function(grunt) {
 	
   var pkg = grunt.file.readJSON('package.json');	
   var cfg = {
-    src: 'src/',
-    // Change 'localhost' to '0.0.0.0' to access the server from outside.
+    src: 'docs/',
     serverHost: '0.0.0.0',
     serverPort: 8090,
     livereload: 35729
@@ -99,7 +98,7 @@ module.exports = function(grunt) {
           dest: 'sea-modules'
         }]
       }
-    },git@github.com
+    },
     css_combo: {
 	    options: {
 	      debug: false,
