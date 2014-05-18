@@ -79,7 +79,7 @@ define(function(require, exports) {
 				function ()
 				{
 					oDiv.style.display='none';
-					suninfo.notice = null;
+					furnace.notice = null;
 				}
 			);
 		};

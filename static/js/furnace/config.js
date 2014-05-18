@@ -6,7 +6,7 @@ seajs.config({
 		"cssTable":"lib/cssTable/cssTable.interface.js",
 		"dialog":"lib/dialog/dialog.interface.js",
 		"datePicker":"lib/datePicker/WdatePicker.interface.js",
-		"suninfo":"suninfo/furnace.js",
+		"furnace":"furnace/furnace.js",
 		"fonts":"lib/fonts/digitalFont.interface.js",
 		"formValid":"lib/formValid/formValid.interface.js",
 		"customLayout":"lib/customLayout/customLayout.interface.js",

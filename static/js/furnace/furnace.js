@@ -42,6 +42,4 @@ define(function(require, exports, module) {
 	module.exports = furnace;
 	//导出为全局变量
 	window.furnace = furnace;
-	//框架别名
-	window.suninfo = window.furnace;
 });

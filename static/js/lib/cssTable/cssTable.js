@@ -106,7 +106,7 @@
 								if ($.isFunction(op.callback)) op.callback(response);
 							}
 						},
-						error : suninfo.ajaxError,
+						error : furnace.ajaxError,
 						statusCode : {
 							503: function(xhr, ajaxOptions, thrownError) {
 								alert(furnace.msg["statusCode_503"] || thrownError);
