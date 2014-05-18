@@ -1,0 +1,97 @@
+/**
+ * BUG IE7下 v11 v7 v5 最后一项 m-col 换行
+ **/
+.m-out-row,
+.m-in-col{
+    margin: 0;
+    padding: 5px;
+}
+.m-row{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    *overflow: visible;
+}
+.m-col{
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+}
+.m-col-fit{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.m-col-right{
+    margin: 0;
+    padding: 0;
+    float: right;
+    overflow: hidden;
+}
+.m-col-1,
+.m-col-2,
+.m-col-3,
+.m-col-4,
+.m-col-5,
+.m-col-6,
+.m-col-7,
+.m-col-8,
+.m-col-9,
+.m-col-10,
+.m-col-11,
+.m-col-15,
+.m-col-v5,
+.m-col-v7,
+.m-col-v11{
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+}
+.m-col-1{
+    width: 8.3333%;
+}
+.m-col-2{
+    width: 16.6666%;
+}
+.m-col-3{
+    width: 24.9999%;
+}
+.m-col-4{
+    width: 33.3333%;
+}
+.m-col-5{
+    width: 41.6666%;
+}
+.m-col-6{
+    width: 49.9999%;
+}
+.m-col-7{
+    width: 58.3333%;
+}
+.m-col-8{
+    width: 66.6666%;
+}
+.m-col-9{
+    width: 74.9999%;
+}
+.m-col-10{
+    width: 83.3333%;
+}
+.m-col-11{
+    width: 91.6666%;
+}
+.m-col-12{
+    width: 100%;
+}
+.m-col-v5{
+    width: 19.9999%;
+}
+.m-col-v7{
+    width: 14.2857%;
+}
+.m-col-v11{
+    width: 9.0909%;
+}

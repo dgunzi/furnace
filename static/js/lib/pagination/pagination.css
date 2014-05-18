@@ -1,0 +1,42 @@
+.pagination li span,
+.pagination li.disabled span span,
+.pagination li.jumpto, .pagination li.jumpto .goto { background-image:url("./img/grid.gif");background-repeat:  no-repeat; }
+.pagination { float:right; padding:3px 20px 3px 7px; background-position:0 -199px;}
+.pagination li.hover { padding:0 0 0 5px; background:rgba(255,255,255,0.3);}
+.pagination a, .pagination li.hover a, .pagination li span { float:left; display:block; padding:0 5px 0 0; text-decoration:none; line-height:23px; background-position:100% -150px;color:#fff}
+.pagination li.selected a{color:#ff6600; font-weight:bold;}
+.pagination span, .pagination li.hover span { float:left; display:block; height:23px; line-height:23px; cursor:pointer;}
+
+.pagination li .first span, .panelBar li .previous span { padding:0 0 0 10px;}
+.pagination li .next span, .panelBar li .last span { padding:0 10px 0 0;}
+.pagination li .first span { background-position:0 -244px;}
+.pagination li .previous span { background-position:0 -294px;}
+.pagination li .next span { background-position:100% -344px;}
+.pagination li .last span { background-position:100% -394px;}
+.pagination li .last { margin-right:5px;}
+.pagination ul
+{
+	
+}
+.pagination li
+{
+	height:21px;
+	margin-left:6px;
+	border:2px solid #000;
+	border-radius:3px;
+	background:#111;
+}
+.pagination li.disabled {}
+.pagination li.disabled span, .grid .pagination li.disabled a { background-position:0 100px; cursor:default;}
+.pagination li.disabled span span { color:#666;}
+.pagination li.disabled .first span { background-position:0 -444px;}
+.pagination li.disabled .previous span { background-position:0 -494px;}
+.pagination li.disabled .next span { background-position:100% -544px;}
+.pagination li.disabled .last span { background-position:100% -594px;}
+.pagination li.disabled .last { margin-right:5px;}
+.pagination li.disabled span span { color:#7b4703;}
+.pagination li.jumpto { padding:2px 2px 0 7px; background-position:0 -200px; background:none;border:0}
+.pagination li.jumpto .textInput { float:left; width:20px; padding:1px; height:15px;}
+.pagination li.jumpto .goto { float:left; display:block; overflow:hidden; width:16px; height:21px; border:2px solid #000000;border-radius:3px; text-indent:-1000px; background-position:-490px -346px;;background-color:#111; cursor:pointer;}
+.pagination li.jumpto .goto:hover{background-color:rgba(255,255,255,0.3);}
+

@@ -1,0 +1,44 @@
+@charset "utf-8";
+.pg
+{
+	width:171px;
+	height:16px;
+	background:url(../images/bg.png);
+	position:relative;
+}
+.pb
+{
+	background:url(../images/br.png);
+	border-radius:9px;
+	width:0;
+	height:16px;
+	overflow:hidden;
+	position:relative;
+}
+.wrap
+{
+	margin:50px auto;
+	width:60%
+}
+.valueTip
+{
+	color:#ffffff;
+	width:34px;
+	height:26px;
+	line-height:23px;
+	text-align:center;
+	font-size:12px;
+	font-weight:normal;
+	position:absolute;
+	margin-left:-20px;
+	top:-26px;
+	background:url(../images/tipNum.png) no-repeat;
+}
+.light
+{
+	position:absolute;
+	right:0;
+	background:url(../images/light.png) 8px -9px no-repeat;
+	width:30px;
+	height:16px;
+}

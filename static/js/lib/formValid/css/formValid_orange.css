@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*表单验证相关*/
+.tipMsgWrap
+{
+	position:relative;
+	display:none;
+	color:#000;
+	font-size:12px;
+	width:0;
+	height:0;
+	left:10px;
+	vertical-align:bottom;
+	z-index:100;
+}
+.checkForm
+{
+	
+}
+
+.tipMsgWrap .formTip,.tipMsgWrap .errorTips,.tipMsgWrap .rightTip
+{
+	height:30px;
+	line-height:30px;
+	padding:0 10px 0 23px;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:3px;
+	z-index:1;
+	background-color:#F9AC3A;
+	box-shadow:0 2px 4px #000;
+	text-shadow: 0 1px 2px #999999;
+	white-space:nowrap
+}
+
+/*输入提示图片*/
+.tipMsgWrap .formTip
+{
+	background-color:#ABDA12;
+	background-image:url(../images/formTip.png);
+	background-image:url(../images/formTip.png) ,-moz-linear-gradient(center top , #ABDA12,#36790D);
+	background-image:url(../images/formTip.png) ,-webkit-gradient(linear, left top, left bottom, from(#ABDA12),to(#36790D));
+	background-position: 6px center;
+	background-position: 6px center,0 0;
+	background-repeat:no-repeat;
+	
+}
+/* 错误信息提示图片*/
+.tipMsgWrap .errorTips
+{
+	background-color:#F9AC3A;
+	background-image:url(../images/errorMsg.png) ;
+	background-image:url(../images/errorMsg.png) ,-moz-linear-gradient(center top , #F9AC3A,#E2790E 50%,#EC5913) ;
+	background-image:url(../images/errorMsg.png) ,-webkit-gradient(linear, left top, left bottom, from(#F9AC3A),color-stop(0.6, #E2790E),to(#EC5913)); 
+	background-position: 6px center;
+	background-position: 6px center,0 0;
+	background-repeat:no-repeat;
+}
+/*信息填对提示图片*/
+.tipMsgWrap .rightTip
+{
+	background-color:#F9AC3A;
+	background-image:url(../images/formRight.png);
+	background-image:url(../images/formRight.png) ,-moz-linear-gradient(center top , #F9AC3A,#E2790E 60%,#F9AC3A);
+	background-image:url(../images/formRight.png) ,-webkit-gradient(linear, left top, left bottom, from(#F9AC3A),color-stop(0.6, #E2790E),to(#F9AC3A));
+	background-position: 6px center;
+	background-position: 6px center,0 0;
+	background-repeat:no-repeat;
+}
+.errorTipsCustom,.formTipCustom,.rightTipCustom
+{
+	height:23px;
+	line-height:23px;
+	padding:0 10px 0 23px;
+}
+.errorTipsCustom
+{
+	background:url(../images/errorMsg.png) 6px center  no-repeat;
+	color:red
+}
+.formTipCustom
+{
+	background:url(../images/formTip.png) 6px center no-repeat;
+}
+.rightTipCustom
+{
+	background:url(../images/formRight.png) 6px center no-repeat;
+}
+.errorTipsColor
+{
+	background-color:#FBE2E2 !important;
+	box-shadow: 0 0 3px red;
+}
+.notNullCheck
+{
+}
+.tipMsgWrap .tipFixed,.tipMsgWrap .tipErr
+{
+	color:#ABDA12;
+	position:absolute;
+	left:20px;
+	top:-6px
+}
+.tipMsgWrap .tipErr
+{
+	color:#F9AC3A;
+}
+a.notNullTip{
+	color:red !important;height:20px;line-height:20px;padding-left:1px;text-decoration:none !important;
+}
+/*************************************************************/

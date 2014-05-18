@@ -1,0 +1,111 @@
+/**** button ***/
+.mens_btn,
+.mens_btn_s1,
+.mens_btn_s2,
+.mens_btn_s3,
+.mens_btn_s4,
+.mens_btn_s1_disabled,
+.mens_btn_s2_disabled,
+.mens_btn_s3_disabled,
+.mens_btn_s4_disabled{
+	background: url(../images/box_bar_bg.png);
+	margin: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-width: 0;
+	-webkit-box-shadow: #000 0 1px 3px;
+	-moz-box-shadow: #000 0 1px 3px;
+	box-shadow: #000 0 1px 3px;
+	color: #fff;
+	text-shadow: #000 0 1px 3px;
+	cursor: pointer;
+	outline: medium none;
+	display: inline-block;
+}
+.mens_btn_disabled,
+.mens_btn_s1_disabled,
+.mens_btn_s2_disabled,
+.mens_btn_s3_disabled,
+.mens_btn_s4_disabled{
+	color: #999;
+}
+.mens_btn,
+.mens_btn_disabled,
+.mens_btn_s1,
+.mens_btn_s1_disabled{
+	line-height: 18px;
+	font-size: 12px;
+	padding: 5px 10px;
+}
+.mens_btn_s2,
+.mens_btn_s2_disabled{
+	line-height: 21px;
+	font-size: 14px;
+	padding: 7px 12px;
+}
+.mens_btn_s3,
+.mens_btn_s3_disabled{
+	line-height: 24px;
+	font-size: 16px;
+	padding: 9px 14px;
+}
+.mens_btn_s4,
+.mens_btn_s4_disabled{
+	line-height: 27px;
+	font-size: 18px;
+	padding: 11px 16px;
+}
+
+@-moz-document url-prefix(){
+	button.mens_btn,
+	button.mens_btn_disabled,
+	button.mens_btn_s1,
+	button.mens_btn_s1_disabled{
+		line-height: 15px;
+		padding: 5px 10px;
+	}
+	a.mens_btn,
+	a.mens_btn_disabled,
+	a.mens_btn_s1,
+	a.mens_btn_s1_disabled{
+		line-height: 17px;
+		padding: 5px 10px 6px 10px;
+	}
+	input.mens_btn,
+	input.mens_btn_disabled,
+	input.mens_btn_s1,
+	input.mens_btn_s1_disabled{
+		line-height: 15px;
+		padding: 4px 10px 5px 10px;
+	}
+	button.mens_btn_s2,
+	button.mens_btn_s2_disabled{
+		line-height: 19px;
+	}
+	button.mens_btn_s3,
+	button.mens_btn_s3_disabled{
+		line-height: 22px;
+	}
+	button.mens_btn_s4,
+	button.mens_btn_s4_disabled{
+		line-height: 25px;
+	}
+}
+
+.mens_btn:hover,
+.mens_btn_s1:hover,
+.mens_btn_s2:hover,
+.mens_btn_s3:hover,
+.mens_btn_s4:hover{
+	background: url(../images/tab_btn_press_bg.png);
+}
+
+.mens_btn img,
+.mens_btn_s1 img,
+.mens_btn_s1_disabled img{
+	border: medium none;
+	vertical-align: -4px;
+	width: 16px;
+	height: 16px;
+}

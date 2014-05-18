@@ -1,0 +1,73 @@
+/* CSS Table */
+table.list {border-collapse:collapse; border-width:1px 0;border-style:solid;border-color:#000;width:100%;table-layout:fixed}
+table.list thead tr {
+	background:url(../../../images/ui3.3/bg_white_1.png)
+}
+table.list td,table.list th
+{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+table.listWrap td,table.listWrap th
+{
+	word-wrap:break-word !important; 
+	word-break:break-all !important; 
+	overflow:auto !important; 
+	text-overflow:clip !important; 
+	white-space:normal !important; 
+}
+table.list td.labelTd
+{
+	text-align:right;
+	vertical-align:top
+}
+table.list td.contentTd
+{
+	text-align:left;
+	vertical-align:top;
+}
+table.list th.sort{cursor:pointer;}
+table.list th.asc{background-position: 100% 0; background:url(./img/order_up.gif) no-repeat right; cursor:pointer;}
+table.list th.desc{background-position: 100% 0; background:url(./img/order_down.gif) no-repeat right; cursor:pointer;}
+table.list th ,table.list td{padding:1px 2px; line-height:21px; border-width:1px;border-style:solid;border-color:#000; text-align:center;}
+table.list th{font-weight:bolder;color:#ff6600 }
+table.list .left { text-align:left;}
+table.list .right { text-align:right;}
+table.list .center { text-align:center;}
+table.list tbody {color:#fff}
+table.list tbody tr {background:url(../../../images/ui3.3/bg_black_2.png)}
+table.list .right {text-align:right;}
+table.list .trbg {background:url(../../../images/ui3.3/bg_white_1.png)}
+table.list .hot {background-color:#fff5c0;}
+table.list .hover {
+	background:url(../../../images/ui3.3/bg_white_3.png);
+}
+table.list .selected {
+	background:url(../../../images/ui3.3/bg_white_3.png);
+}
+table.list a {color:#f8f503;font-size:12px;line-height:20px;}
+table.list a:hover {text-decoration:underline;color:#f0e805;}
+table.list td span.error {z-index:-1}
+table.nowrap tbody tr {border-bottom:solid 1px #ededed;}
+/* button */
+a.btnAdd, a.btnDel, a.btnView, a.btnEdit, a.btnSelect, a.btnInfo, a.btnAssign, a.btnLook, a.btnAttach,a.btnDownload,a.newReport,a.sendReport,a.newReportAuto ,a.newFile ,a.sends{background:url(./img/imgX.png) no-repeat; line-height:21px;display:block; width:20px; height:20px;text-indent:-1000px; overflow:hidden; float:left; margin-right: 3px}
+a.btnAdd{background-position:0 0}
+a.btnDel{background-position: -20px 0}
+a.btnInfo{background-position: -42px 0}
+a.btnAssign{background-position: -62px 0}
+a.btnView{background-position: -103px 0}
+a.btnEdit{background-position: -125px 0}
+a.btnSelect{background-position: -83px 0}
+a.btnLook{background-position: -145px 0}
+a.btnAttach{background-position: -166px 0}
+a.btnDownload{background-position: -187px 0}
+a.newReport{background-position: -250px 0}
+a.newReportAuto{background-position: -271px 0}
+a.sendReport{background-position: -292px 0}
+a.newFile{background-position: -208px 0}
+a.sends{background-position: -230px 0}
+.center a.btnAdd, .center a.btnDel, .center a.btnView, .center a.btnEdit, .center a.btnSelect, .center a.btnInfo,.center a.btnDownload,
+.center a.btnAssign, .center a.btnLook, .center a.btnAttach , .center a.newReport, .center a.sendReport, .center a.newReportAuto, .center a.newFile, .center a.sends{display:inline-block;float:none}
+.right a.btnAdd, .right a.btnDel, .right a.btnView, .right a.btnEdit, .right a.btnSelect, .right a.btnInfo, 
+.right a.btnAssign, .right a.btnLook, .right a.btnAttach ,.right a.btnDownload{display:inline-block;float:none;text-indent:1000px}

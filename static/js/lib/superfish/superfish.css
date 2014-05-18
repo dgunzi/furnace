@@ -1,0 +1,228 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.sf-menu
+{
+	background: url("../../../images/ui3.3/box_bar_bg.png") repeat-x scroll 0 0 transparent;
+	width:100%
+}
+ul.fix
+{
+	position:fixed;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+	margin:4px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-top:1px solid #777;
+	border-left:1px solid #666;
+	border-right:1px solid #222;
+	border-bottom:1px solid #222;
+}
+.sf-menu > li:hover{
+	border-top:1px solid #222;
+	border-left:1px solid #222;
+	border-right:1px solid #666;
+	border-bottom:1px solid #777;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+.sf-menu li.disabled:hover > ul,
+.sf-menu li.disabled > ul {
+	display: none !important;
+}
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: left;
+	margin-bottom: 3px;
+}
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-menu a {
+	padding: .5em 1em .5em 2.7em;
+	text-decoration: none;
+	cursor:pointer;
+	color: #fff;
+	font-weight:bold;
+	text-shadow:0 1px 3px #000;
+	zoom: 1; /* IE7 */
+}
+.sf-menu li {
+	background: url("../../../images/ui3.3/box_bar_bg.png") repeat-x scroll 0 0 transparent;
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .3s;
+	transition: background .3s;
+}
+.sf-menu ul li {
+	background: #666666;
+}
+.sf-menu li ul li a{
+	text-align: left;
+	padding-left:30px;
+	border-bottom: 1px dotted #fff;
+}
+.sf-menu ul ul li {
+	background: #666666;
+}
+.sf-menu li:hover {
+	background: url(../../../images/ui3.3/tab_btn_press_bg.png);
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+	padding-right: 2.5em;
+	*padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	margin-top: -3px;
+	height: 0;
+	width: 0;
+	/* order of following 3 rules important for fallbacks to work */
+	border: 5px solid transparent;
+	border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-top-color: rgba(255,255,255,.5);
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+	margin-top: -5px;
+	margin-right: -3px;
+	border-color: transparent;
+	border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+	border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+	border-left-color: white;
+}
+.sf-menu li.disabled a
+{
+	color:#999 !important;
+}
+.sf-menu li.disabled:hover 
+{
+	background: url("./images/porlet.gif") repeat-x scroll 0 0 transparent;
+}
+.sf-menu .add
+{
+	background: url("./images/add.png") no-repeat 7px center;
+}
+.sf-menu .delete
+{
+	background: url("./images/del.png") no-repeat 7px center;
+}
+.sf-menu .export
+{
+	background: url("./images/export.png") no-repeat 7px center;
+}
+.sf-menu .exports
+{
+	background: url("./images/exports.png") no-repeat 7px center;
+}
+.sf-menu .import
+{
+	background: url("./images/import.png") no-repeat 7px center;
+}
+.sf-menu .edit
+{
+	background: url("./images/page_white_edit.png") no-repeat 7px center;
+}
+.sf-menu .back
+{
+	background: url("./images/back.png") no-repeat 7px center;
+}
+.sf-menu .save
+{
+	background: url("./images/save.png") no-repeat 7px center;
+}
+.sf-menu .view
+{
+	background: url("./images/viewPanel.png") no-repeat 7px center;
+}
+.sf-menu .upload
+{
+	background: url("./images/upload.png") no-repeat 7px center;
+}
+.sf-menu .download
+{
+	background: url("./images/download.png") no-repeat 7px center;
+}
+.sf-menu .refresh
+{
+	background: url("./images/arrow_refresh.png") no-repeat 7px center;
+}
+.sf-menu .mode{
+	float:right;
+}
+.sf-menu .cardmode
+{
+	background: url("./images/cardmode.png") no-repeat 7px center;
+}
+.sf-menu .listmode
+{
+	background: url("./images/listmode.png") no-repeat 7px center;
+}
+.sf-menu .editmode
+{
+	background: url("./images/editmode.png") no-repeat 7px center;
+}
+.sf-menu .viewmode
+{
+	background: url("./images/viewmode.png") no-repeat 7px center;
+}
+.sf-menu .currentmode
+{
+	background: url(../../../images/ui3.3/tab_btn_press_bg.png);
+}
+.sf-menu .restore
+{
+	background: url("./images/restore.png") no-repeat 7px center;
+}
+.sf-menu .backups
+{
+	background: url("./images/backups.png") no-repeat 7px center;
+}

@@ -1,0 +1,65 @@
+.usual 
+{
+	padding:0;
+	width:260px;
+	margin:1px auto;
+	height:100%;
+}
+.usual ul.tab 
+{ 
+	width:260px;
+	margin: 0;
+	padding:0;
+	float:left;
+}
+.usual ul.tab li,.usualIt ul.tabsLev li
+{ 
+	list-style:none; 
+	float:left;
+}
+
+.usual ul.tab a,.usualIt ul.tabsLev a
+{
+	float:left;
+	text-decoration:none!important;
+	border-bottom:1px solid #464A56;
+	margin:2px;
+	margin-left:0;
+	margin-bottom:0;
+	color:#F7FAFB;
+	background: url(../images/ui3.3/box_bar_bg.png) repeat-x;
+	font-size:14px;
+	font-weight:"微软雅黑";
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	-moz-border-radius: 3px 3px 0 0 ;      
+	-webkit-border-radius:  3px 3px 0 0 ;     
+	border-radius:  3px 3px 0 0 ;   
+	padding:0 9.5px;  
+	font-weight:bold;
+	text-shadow:0 1px 3px #000;
+}
+.usual ul.tab a:hover,.usualIt ul.tabsLev a:hover,.usual ul.tab a.selected,.usualIt ul.tabsLev a.selected
+{
+	background:url(../images/ui3.3/tab_btn_press_bg.png);
+}
+.usual ul.tab a.selected,.usualIt ul.tabsLev a.selected
+{
+	margin-bottom:0;
+	border-bottom:1px solid #FF6600;
+	cursor:default;
+}
+.usual div.tab 
+{
+	padding:10px 10px 8px 10px;
+	clear:left;
+	background:url(../images/ui3.3/bg_white_1.png);
+	font:13px "宋体";
+	color:#F7FAFB;
+	width:236px;
+	text-align:left;
+	overflow:auto;
+	border:#666 1px solid;
+	border-top:3px solid #FF6600;
+}

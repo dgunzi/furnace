@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/*表单验证相关*/
+.tipMsgWrap
+{
+	position:relative;
+	display:none;
+	color:#333;
+	font-size:12px;
+	width:0;
+	height:0;
+	vertical-align:bottom;
+	left:10px;
+	z-index:100;
+}
+.checkForm
+{
+	
+}
+/*输入提示图片*/
+.tipMsgWrap .formTip
+{
+	background:url(../images/formTip.png) 6px center no-repeat;
+	width:auto;
+}
+/* 错误信息提示图片*/
+.tipMsgWrap .errorTips
+{
+	background:url(../images/errorMsg.png) 6px center  no-repeat;
+}
+/*信息填对提示图片*/
+.tipMsgWrap .rightTip
+{
+	background:url(../images/formRight.png) 6px center no-repeat;
+}
+.tipMsgWrap .formTip,.tipMsgWrap .errorTips,.tipMsgWrap .rightTip
+{
+	height:30px;
+	line-height:30px;
+	padding:0 10px 0 23px;
+	position:absolute;
+	left:0;
+	top:0;
+	border-radius:3px;
+	z-index:1;
+	background-color:#c0c0c0;
+	box-shadow:0 2px 4px #666;
+	white-space:nowrap
+}
+.tipMsgWrap .errorTips
+{
+	background-color:#999
+}
+.errorTipsCustom,.formTipCustom,.rightTipCustom
+{
+	height:23px;
+	line-height:23px;
+	padding:0 10px 0 23px;
+}
+.errorTipsCustom
+{
+	background:url(../images/errorMsg.png) 6px center  no-repeat;
+	color:red
+}
+.formTipCustom
+{
+	background:url(../images/formTip.png) 6px center no-repeat;
+}
+.rightTipCustom
+{
+	background:url(../images/formRight.png) 6px center no-repeat;
+}
+.errorTipsColor
+{
+	background-color:#FBE2E2 !important;
+	box-shadow: 0 0 3px red;
+}
+.notNullCheck
+{
+}
+.tipMsgWrap .tipFixed,.tipMsgWrap .tipErr
+{
+	color:#c0c0c0;
+	position:absolute;
+	left:20px;
+	top:-6px
+}
+.tipMsgWrap .tipErr
+{
+	color:#999;
+}
+a.notNullTip{
+	color:red !important;height:20px;line-height:20px;padding-left:1px;text-decoration:none !important;
+}
+/*************************************************************/
