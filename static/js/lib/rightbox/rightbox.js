@@ -4,6 +4,7 @@ define(function(require, exports) {
     teml += '<a id="btn_close" href="javascript:;" class="close ui_close">×</a></div>';
     teml += '<div id="rightbox_content_wrap" class="content"><div class="wrap_div" id="rightbox_content"></div></div>';
     
+    var onMove = false;
     	
 	var msecs = 500; //改变时间得到不同的闪烁间隔
 	var bflag = false;
@@ -60,15 +61,20 @@ define(function(require, exports) {
 			if(!this.isMax){
 				_clear_blink();
 			}
-			startMove
-			(
-				oDivContent, (this.isMax=!this.isMax)?iMaxHeight:0,
-				function ()
-				{
-					oBtnMin.className=oBtnMin.className=='ui_max'?'ui_min':'ui_max';
-					oBtnMin_b.className=oBtnMin_b.className=='ui_max_b'?'ui_min_b':'ui_max_b';
-				}
-			);
+			if(!onMove)
+			{
+				startMove
+				(
+					oDivContent, (this.isMax=!this.isMax)?iMaxHeight:0,
+					function ()
+					{
+						oBtnMin.className=oBtnMin.className=='ui_max'?'ui_min':'ui_max';
+						oBtnMin_b.className=oBtnMin_b.className=='ui_max_b'?'ui_min_b':'ui_max_b';
+						onMove = false;
+					}
+				);
+			}
+			
 		};
 		
 		oBtnClose.onclick=function ()
@@ -79,7 +85,7 @@ define(function(require, exports) {
 				function ()
 				{
 					oDiv.style.display='none';
-					furnace.notice = null;
+					suninfo.notice = null;
 				}
 			);
 		};
@@ -87,6 +93,7 @@ define(function(require, exports) {
 
 	function startMove(obj, iTarget, fnCallBackEnd)
 	{
+		onMove = true;
 		if(obj.timer)
 		{
 			clearInterval(obj.timer);
